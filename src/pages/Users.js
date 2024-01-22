@@ -22,9 +22,11 @@ function UsersPage() {
     <div className='Users-Container'>
       <strong>Current users</strong>
       <hr/><hr/>
-      {data.users.map((user) => (
-        <UserCard key={user.id} data={user} />
-      ))}
+      <div className='Users-Data-Container'>
+        {data.users.map((user) => (
+          <UserCard key={user.id} data={user} />
+        ))}
+      </div>
     </div>
   );
 }

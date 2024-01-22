@@ -1,9 +1,9 @@
-import './Users.css';
+import './Posts.css';
 import { useQuery, gql } from '@apollo/client';
 import PostCard from '../components/PostCard';
 
 const GET_POSTS = gql`
-  query GetUsers {
+  query GetPosts {
     posts {
       id
       content
@@ -26,9 +26,11 @@ function PostsPage() {
     <div className='Posts-Container'>
       <strong>Current posts</strong>
       <hr/><hr/>
-      {data.posts.map((post) => (
-        <PostCard key={post.id} data={post} />
-      ))}
+      <div className='Posts-Data-Container'>
+        {data.posts.map((post) => (
+          <PostCard key={post.id} data={post} />
+        ))}
+      </div>
     </div>
   );
 }
