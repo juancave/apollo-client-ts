@@ -1,0 +1,29 @@
+.NavBar-Container {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+}
+
+.NavBar-OptionsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.NavBar-Link {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  display: initial;
+}
+
+.NavBar-Link:hover {
+  text-decoration: underline;
+}
+
+.NavBar-Logo {
+  width: 50px;
+}
